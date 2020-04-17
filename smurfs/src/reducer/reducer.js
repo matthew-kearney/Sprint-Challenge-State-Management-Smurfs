@@ -1,4 +1,4 @@
-import {FETCHING_DATA, FETCHING_COMPLETE, FETCHING_FAIL} from './smurfs/src/actions/actions.js';
+import {FETCHING_DATA, FETCHING_COMPLETE, FETCHING_FAIL} from '../actions/action';
 
 const initialState = {
     smurfData: [],
@@ -20,7 +20,7 @@ const Reducer = (state = initialState, action) => {
             isFetching: false,
             error: '',
             smurfData: action.payload
-        }
+        } 
         case FETCHING_FAIL:
             return {
                 ...state,

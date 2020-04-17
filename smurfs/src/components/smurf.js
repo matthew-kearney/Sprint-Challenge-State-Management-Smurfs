@@ -1,6 +1,6 @@
 import React, {useEffect} from 'react';
 import SmurfCard from './SmurfCard';
-import {fetchData} from './src/actions/actions';
+import {fetchData} from '../actions/action'
 import {connect} from 'react-redux';
 
 const Smurf = props => {
